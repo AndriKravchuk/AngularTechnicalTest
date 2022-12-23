@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div>
+    <label class="label">Label</label>
+    <input type="text" id="name" required [(ngModel)]="task.label" name="label">
+  </div>
+
+  <div>
+    <label class="label">Description</label>
+    <input type="text" id="description" required [(ngModel)]="task.description" name="description">
+  </div>
+
+  <div>
+    <label class="label">Category</label>
+    <input type="text" id="category" [(ngModel)]="task.category" name="category">
+  </div>
+  <div *ngIf="task.id">
+    <label class="label">Done</label>
+    <input type="checkbox" class="checkbox" id="category" [(ngModel)]="task.done" name="category">
+  </div>
+</div>
+
+<footer>
+  <button [disabled]="!task.label || !task.description" (click)="save()">
+    {{ 'Save' }}
+  </button>
+  <button *ngIf="task.id" (click)="delete()">
+    {{ 'Delete' }}
+  </button>
+</footer>

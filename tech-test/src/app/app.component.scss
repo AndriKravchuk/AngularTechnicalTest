@@ -1,7 +1,30 @@
-.title-text{
-  font-size: 20px;
-  line-height: 1.5;
-  color: #20364b;
-  font-weight: 600;
-  font-family: 'ProximaNova', sans-serif;
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  background: antiquewhite;
+
+  .action {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    button {
+      border-radius: 10px;
+      margin: 5px;
+      width: 75px;
+      background: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }

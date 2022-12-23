@@ -1,2 +1,19 @@
-<h1 class="title-text">Welcome to Origin's Angular Technical Test: {{title}}</h1>
+<div class="header">
+    <h1>
+        {{title}}
+    </h1>
+      
+<div class="action">
+    <button routerLink="/task">Add</button>
+    <button routerLink="/list">List</button>
+</div>
+     
+
+  
+</div>
+
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
 

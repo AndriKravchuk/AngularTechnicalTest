@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.label {
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    width:100px;
+}
+
+.checkbox {
+    margin-right: 160px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+::ng-deep .custom-style{
+    color: rgba(255,255,255,.7);
+    background: #323232;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+  }
